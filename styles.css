@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+}
+
+.section2{
+    background-color: #FFFF;
+    text-align: center;
+    padding: 100px 0 111px 0; /*top right botttom left*/
+}
+
+.section2 h2{
+    margin-bottom: 42px;
+    /*надо расположить по центру блок и width: 739px;*/
+}
+
+.section2 p {
+    color: grey;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 62px;
+}
+
+.photo{ /*заменить потом на фото*/
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #4985FF;
+    margin: 20px auto;
+}
+
+.box p{
+    margin-bottom:0;
+}
+
+.boxes{
+    display: flex;
+}
+
