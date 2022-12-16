@@ -159,3 +159,81 @@ section.section1 p {
 }
 
 /*============================= SECTION 2 ==============================*/
+
+/* SECTION 3 =================*/
+section.section3 {
+  width: 100vw;
+  height: 120vh;
+}
+div.colored-container {
+  width: 100vw;
+  height: 50%;
+  padding-top: 100px;
+  background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
+}
+div.content-container {
+  border-bottom: 1px solid #e0e0e0;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 85px;
+}
+div.content-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+div.white-container {
+  width: 100%;
+  height: 50%;
+}
+
+div.service-boxes {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+div.service-box {
+  width: 350px;
+}
+
+div.image-container {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+img.service-img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+h3.service-description-header {
+  margin-bottom: 15px;
+}
+h3 > span.number-style {
+  color: #4985ff;
+}
+
+p.service-description {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+a.learn-more {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #4985ff;
+}
+/* SECTION 5 ================================= */
