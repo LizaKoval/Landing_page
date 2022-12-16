@@ -98,3 +98,64 @@ button.action-button {
   text-decoration: none;
   color: #fff;
 }
+/* SECTION 1 ==============================*/
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+}
+.section1 {
+  background-color: #ffff;
+  text-align: center;
+  padding: 100px 0 111px 0; /*top right botttom left*/
+}
+
+.section1 h2 {
+  margin: 0 auto; /* auto center position*/
+  margin-bottom: 42px;
+  width: 739px;
+}
+
+.boxes {
+  width: 1113px;
+  margin: 0 auto;
+  display: flex;
+}
+
+section.section1 p {
+  color: grey;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 42px;
+}
+
+.photo {
+  /*заменить потом на фото*/
+  width: 110px;
+  height: auto;
+  border-radius: 50%;
+  background-color: #4985ff;
+  /*margin: 20px auto;*/
+}
+.box {
+  display: flex;
+}
+/*.box p{
+    margin-bottom: 0;
+}*/
+
+.texts {
+  width: 15vw;
+  text-align: left;
+  line-height: 22px;
+  margin-left: 1vw;
+}
+
+.texts h3 {
+  margin-bottom: 20px;
+}
+
+/*============================= SECTION 2 ==============================*/
