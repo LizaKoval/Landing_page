@@ -129,7 +129,7 @@ p{
   padding: 100px 0 111px 0; /*top right botttom left*/
 }
 
-.section1 h2 {
+.section1, .section4, h2 {
   margin: 0 auto; /* auto center position*/
   margin-bottom: 42px;
   /* width: 739px; */
@@ -177,8 +177,8 @@ section.section1 p {
 
 /*============================= SECTION 2 ==============================*/
 
-.section2{
-  height: 770px;
+.section2, .section4{
+  height: 750px;
   background: #F6F6F8;
 }
 
@@ -238,9 +238,33 @@ section.section1 p {
   display: inline-block;
   width: 50%;
   padding-left: 10%;
+  color:#4985ff;
  }
 
 .price h3{
   font-weight: 400;
   font-size: 36px;
+}
+/*============================= SECTION 3 ==============================*/
+
+/*============================= SECTION 4 ==============================*/
+.section4{
+  text-align: center;
+}
+
+.section4 p{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.cards{
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 15px;
+}
+
+.card:hover{
+cursor:pointer;
+transition: all 0.5s;
 }
