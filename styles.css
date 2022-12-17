@@ -258,7 +258,7 @@ section.section1 p {
 }
 
 .cards{
-  margin-top: 42px;
+  margin: 42px auto;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 15px;
@@ -267,4 +267,10 @@ section.section1 p {
 .card:hover{
 cursor:pointer;
 transition: all 0.5s;
+transform: scale(1.1);
+box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+  -o-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
+  border-radius:25px;
 }
