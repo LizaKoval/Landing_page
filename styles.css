@@ -28,6 +28,20 @@ p {
   line-height: 25px;
 }
 
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+}
+p {
+  color: grey;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
 /* MAIN INTRO PAGE===================================*/
 main.intro-main {
   width: 100vw;
@@ -111,28 +125,33 @@ button.action-button {
   text-align: center;
   text-decoration: none;
   color: #fff;
+
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button.action-button:hover {
+  box-shadow: 0 0 40px 40px #ffff inset;
+  color: #4985ff;
+  border: 2px #4985ff solid;
 }
 /* SECTION 1 ==============================*/
-h2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 53px;
-}
 .section1 {
   background-color: #ffff;
   text-align: center;
+  height: 650px;
   padding: 100px 0 111px 0; /*top right botttom left*/
 }
 
-.section1 h2 {
+.section1,
+.section1 > h2,
+.section4 > h2 {
   margin: 0 auto; /* auto center position*/
   margin-bottom: 42px;
-  width: 739px;
 }
 
 .boxes {
-  width: 1113px;
+  width: 70%;
   margin: 0 auto;
   display: flex;
 }
@@ -148,31 +167,95 @@ section.section1 p {
 
 .photo {
   /*заменить потом на фото*/
-  width: 110px;
-  height: auto;
-  border-radius: 50%;
-  background-color: #4985ff;
-  /*margin: 20px auto;*/
+  width: 100px;
+  background-image: url(images/icons8-light-bulb-65.png);
+  background-repeat: no-repeat; /* Do not repeat the image */
+  border-color: #4985ff;
 }
 .box {
   display: flex;
+  margin-left: 1vw;
 }
-/*.box p{
-    margin-bottom: 0;
-}*/
-
 .texts {
-  width: 15vw;
+  width: 60%;
   text-align: left;
   line-height: 22px;
-  margin-left: 1vw;
 }
 
 .texts h3 {
   margin-bottom: 20px;
 }
 
-/*============================= SECTION 2 ==============================*/
+/* SECTION 2 ==============================*/
+.section2,
+.section4 {
+  height: 750px;
+  background: #f6f6f8;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto; /*0 по вертикали, auto-по горизонтали => расположение блока по центру*/
+  padding: 70px 0;
+}
+
+.about {
+  display: flex; /*putting items one by one horizontally*/
+}
+
+.about_photo {
+  margin-left: 6%;
+}
+
+.about_text h2 {
+  padding-bottom: 6%;
+}
+
+.about_text p {
+  padding-bottom: 6%;
+}
+
+.about_text a {
+  color: #4985ff;
+  text-decoration: none;
+}
+
+.about_text a:hover {
+  text-decoration: underline;
+}
+
+.line {
+  width: 97%;
+  height: 2px;
+  background-color: #e0e0e0;
+  margin: 5% auto;
+}
+
+.prices_box {
+  display: flex;
+  padding: 0 70px;
+}
+
+.price {
+  margin: auto; /*blocks ocupy every free space automatically*/
+}
+
+.top img {
+  display: inline-block;
+  width: 30%;
+}
+
+.top h3 {
+  display: inline-block;
+  width: 50%;
+  padding-left: 10%;
+  color: #4985ff;
+}
+
+.price h3 {
+  font-weight: 400;
+  font-size: 36px;
+}
 
 /* SECTION 3 =================*/
 section.section3 {
@@ -250,6 +333,33 @@ a.learn-more {
   text-decoration-line: underline;
   color: #4985ff;
 }
+/* SECTION 4 ================================= */
+.section4 {
+  text-align: center;
+}
+
+.section4 p {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.cards {
+  margin: 42px auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 15px;
+}
+
+.card:hover {
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: scale(1.1);
+  box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+}
 /* SECTION 5 ================================= */
 section.section5 {
   width: 100vw;
@@ -270,6 +380,7 @@ div.colored-work-container {
   background-size: cover;
 }
 div.white-work-container {
+  height: 50%;
 }
 
 div.content-work-container {
@@ -296,7 +407,7 @@ video {
 /* SECTION 6 ============================= */
 div.subscribe-container {
   text-align: center;
-  padding-top: 85px;
+  padding-top: 140px;
   padding-bottom: 85px;
 }
 div.subscribe-container > h3 {
@@ -343,6 +454,11 @@ input[type="submit"] {
   text-align: center;
   color: #ffffff;
 }
+input[type="submit"]:hover {
+  box-shadow: 0 0 40px 40px #ffff inset;
+  color: #4985ff;
+  border: 2px #4985ff solid;
+}
 
 /*  FOOTER ==============================*/
 footer {
@@ -368,12 +484,17 @@ div.contacts-box {
 ul.footer-ul {
   margin-left: 0;
   padding-left: 0;
-  cursor: pointer;
+  color: #999999;
 }
 li.footer-li {
   list-style-image: url("./images/Vector.svg");
   margin-top: 35px;
   margin-left: 15px;
+  cursor: pointer;
+}
+li.footer-li:hover {
+  color: #000;
+  transition: 0.3s;
 }
 li.email-li {
   list-style-image: url("./images/Email.svg");
