@@ -14,7 +14,21 @@ body {
   margin-right: calc(-1 * (100vw - 100%));
   font-family: "Montserrat", sans-serif;
 }
+/* COMMON STYLES */
+h2.sections-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  color: #ffffff;
+}
 
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* MAIN INTRO PAGE===================================*/
 main.intro-main {
   width: 100vw;
   height: 100vh;
@@ -165,13 +179,13 @@ section.section3 {
   width: 100vw;
   height: 120vh;
 }
-div.colored-container {
+div.colored-service-container {
   width: 100vw;
   height: 50%;
   padding-top: 100px;
   background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
 }
-div.content-container {
+div.content-service-container {
   border-bottom: 1px solid #e0e0e0;
   width: 75vw;
   margin-left: auto;
@@ -185,7 +199,7 @@ div.content-header {
   align-items: center;
   margin-bottom: 70px;
 }
-div.white-container {
+div.white-service-container {
   width: 100%;
   height: 50%;
 }
@@ -237,3 +251,146 @@ a.learn-more {
   color: #4985ff;
 }
 /* SECTION 5 ================================= */
+section.section5 {
+  width: 100vw;
+  height: 100vh;
+}
+div.colored-work-container {
+  height: 50%;
+  padding-top: 70px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.15)
+    ),
+    url("./images/Rectangle.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.white-work-container {
+}
+
+div.content-work-container {
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 85px;
+}
+
+p.work-description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+video {
+  width: 890px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+}
+
+/* SECTION 6 ============================= */
+div.subscribe-container {
+  text-align: center;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+div.subscribe-container > h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+div.subscribe-container > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #999999;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+input[type="text"] {
+  width: 489px;
+  height: 43px;
+  padding-right: 190px;
+  padding-left: 35px;
+
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+}
+
+input[type="submit"] {
+  width: 190px;
+  height: 45px;
+
+  margin-left: -190px;
+  background: #4985ff;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 0px 30px 30px 0px;
+
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/*  FOOTER ==============================*/
+footer {
+  background: #f6f6f8;
+}
+div.footer-contacts-container {
+  width: 80vw;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #a1a1a1;
+}
+div.contacts-box {
+  /* width: 35vw; */
+  margin-right: 30px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+ul.footer-ul {
+  margin-left: 0;
+  padding-left: 0;
+  cursor: pointer;
+}
+li.footer-li {
+  list-style-image: url("./images/Vector.svg");
+  margin-top: 35px;
+  margin-left: 15px;
+}
+li.email-li {
+  list-style-image: url("./images/Email.svg");
+}
+li.phone-li {
+  list-style-image: url("./images/Phone.svg");
+}
+li.place-li {
+  list-style-image: url("./images/Place.svg");
+}
+
+footer > p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
+  color: #999999;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
