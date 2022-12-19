@@ -5,19 +5,19 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0; /*внешний отступ*/
+  padding: 0;/*внутренний отступ*/
 }
 
 body {
   overflow-x: hidden;
-  margin-right: calc(-1 * (100vw - 100%));
+  margin-right: calc(-1 * (100vw - 100%)); /*УТОЧНИТЬ*/
   font-family: "Montserrat", sans-serif;
 }
 
 main.intro-main {
-  width: 100vw;
-  height: 100vh;
+  width: 100vw; /*Эквивалентно 1% ширины окна браузера. */
+  height: 100vh;/*1vh Эквивалентно 1% высоты окна браузера*/
   background-image: url("./images/Rectangle.jpg");
   background-color: rgb(69, 77, 74); /* Used if the image is unavailable */
   background-position: center; /* Center the image */
@@ -29,37 +29,37 @@ header {
   width: 100%;
   height: 100px;
   padding-top: 40px;
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #a1a1a1; 
 }
 nav {
   width: 700px;
-  margin-left: 40%;
+  margin-left: 40%; /*внешний отступ отлевого края на 40% от ширины экрана*/
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
 }
 
 ul.intro-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: flex; /*расположение элементов в ряд*/
+  flex-direction: row; 
+  justify-content: space-around; /*предусмотрела расстояние между списочными элементами*/
 }
 
-li.intro-li {
+li.intro-li { /* свойство списочного элемента*/
   display: block;
-  margin-right: 40px;
+  margin-right: 40px; /* расстояние между элементами*/
 }
 
-a.intro-a {
+a.intro-a {/*состояние ссылки(элемента) до наведения курсора*/
   color: #d2d2d2;
   cursor: pointer;
   text-decoration: none;
 }
-a.intro-a:hover {
+a.intro-a:hover { /*состояние ссылки(элемента) после наведения курсора*/
   color: rgb(255, 255, 255);
-  transition: 0.3s;
-  text-decoration: underline;
-  text-underline-offset: 43px;
+  transition: 0.3s; /*время изменения состояния объекта*/
+  text-decoration: underline; /* нижнее подчёркивание ссылки*/
+  text-underline-offset: 43px;/*сдвиг подчёркивания на 43 пк вниз*/
 }
 
 section.intro-section {
@@ -88,17 +88,16 @@ button.action-button {
   background-color: #4985ff;
   border: none;
   border-radius: 30px;
-  padding: 13px 36px;
-  cursor: pointer;
+  padding: 13px 36px; /*13px по вертикали 36px - справа и слева*/
 
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
+  text-align: center; /*выравнивание по центру*/
   text-decoration: none;
   color: #fff;
 
-  transition: all 0.5s;
+  transition: all 0.5s; /*Время за которое объект изменяется*/
   cursor: pointer;
 }
 
@@ -132,7 +131,6 @@ p{
 .section1, .section4, h2 {
   margin: 0 auto; /* auto center position*/
   margin-bottom: 42px;
-  /* width: 739px; */
 }
 
 .boxes {
@@ -151,19 +149,15 @@ section.section1 p {
 }
 
 .photo {
-  /*заменить потом на фото*/
   width: 100px;
   background-image: url(images/icons8-light-bulb-65.png);
-  background-repeat: no-repeat; /* Do not repeat the image */
-  border-color: #4985ff;
+  background-repeat: no-repeat;  /*Do not repeat the image */
 }
+
 .box {
   display: flex;
   margin-left:1vw;
 }
-/*.box p{
-    margin-bottom: 0;
-}*/
 
 .texts {
   width: 60%;
@@ -171,7 +165,7 @@ section.section1 p {
   line-height: 22px;
 }
 
-.texts h3 {
+.texts h3 { /*отступ между заголовком и параграфом коробки с текстами*/
   margin-bottom: 20px;
 }
 
@@ -194,10 +188,6 @@ section.section1 p {
 
 .about_photo{
   margin-left: 6%;
-}
-
-.about_text h2{
-  padding-bottom: 6%;
 }
 
 .about_text p{
@@ -267,7 +257,7 @@ section.section1 p {
 .card:hover{
 cursor:pointer;
 transition: all 0.5s;
-transform: scale(1.1);
+transform: scale(1.1); /*увелечение объекта*/
 box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
   -moz-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
   -webkit-box-shadow: 10px -10px 5px  rgba(0,0,0,0.6);
