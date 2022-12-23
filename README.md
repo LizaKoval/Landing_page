@@ -7,5 +7,5 @@ Here you can find some samples of: <br>
 - flexbox constructions <br>
 - grid
 
-It was a bit fun to learn how to merge branches and feel terrifyed when solving upraised conflicts for the first time.
-You are very welcome to check it out)
+It was a bit fun to learn how to merge branches, approve pull requests and feel terrifyed when solving upraised conflicts for the first time.
+You are very welcome to check it out ╰(▔∀▔)╯
