@@ -1,5 +1,5 @@
 # Landing_page
-Simple landing page for IT-company was created mostly to refresh some of our web development skills and to level up GitHub skills.
+Simple but elegant landing page for IT-company was created mostly to refresh some of our web development skills and to level up GitHub skills.
 ![image](https://user-images.githubusercontent.com/63054459/209401645-7afc72e3-2564-4eae-8f4e-b4793498513e.png)
 
 Here you can find some samples of: <br> 
