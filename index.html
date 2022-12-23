@@ -21,8 +21,12 @@
             <li class="intro-li">
               <a class="intro-a" href="#">Наши проекты</a>
             </li>
-            <li class="intro-li"><a class="intro-a" href="#">Услуги</a></li>
-            <li class="intro-li"><a class="intro-a" href="#">Новости</a></li>
+            <li class="intro-li">
+              <a class="intro-a" href="#services">Услуги</a>
+            </li>
+            <li class="intro-li">
+              <a class="intro-a" href="#news">Новости</a>
+            </li>
             <li class="intro-li"><a class="intro-a" href="#">Контакты</a></li>
           </ul>
         </nav>
@@ -77,9 +81,8 @@
         </div>
       </div>
       <button class="action-button">Все услуги</button>
-      <!--<div class="button"></div> разобраться как стилизовать кнопку -->
     </section>
-<!-----------------------------SECTION 2 ----------------------------------->
+    <!-----------------------------SECTION 2 ----------------------------------->
     <section class="section2">
       <div class="wrapper">
         <div class="about">
@@ -136,11 +139,78 @@
         </div>
       </div>
     </section>
-
-    <!----------------------------- SECTION 3 ----------------------------------->
-
-    <!----------------------------- SECTION 4 ----------------------------------->
-
+    <!-----------------------------SECTION 3 ----------------------------------->
+    <section class="section3" id="services">
+      <div class="colored-service-container">
+        <div class="content-service-container">
+          <div class="content-header">
+            <h2 class="sections-header">
+              Наши работы, на которых<br />
+              мы специализируемся
+            </h2>
+            <button class="action-button">Все услуги</button>
+          </div>
+          <div class="service-boxes">
+            <div class="service-box">
+              <div class="image-container">
+                <img
+                  src="./images/RectangleShort.jpg"
+                  alt="service-image"
+                  class="service-img"
+                />
+              </div>
+              <h3 class="service-description-header">
+                <span class="number-style">01. </span>Исследование и упаковка
+              </h3>
+              <p class="service-description">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века.
+              </p>
+              <a class="learn-more" href="#">Подробнее</a>
+            </div>
+            <div class="service-box">
+              <div class="image-container">
+                <img
+                  src="./images/RectangleShort.jpg"
+                  alt="service-image"
+                  class="service-img"
+                />
+              </div>
+              <h3 class="service-description-header">
+                <span class="number-style">01. </span>Исследование и упаковка
+              </h3>
+              <p class="service-description">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века.
+              </p>
+              <a class="learn-more" href="#">Подробнее</a>
+            </div>
+            <div class="service-box">
+              <div class="image-container">
+                <img
+                  src="./images/RectangleShort.jpg"
+                  alt="service-image"
+                  class="service-img"
+                />
+              </div>
+              <h3 class="service-description-header">
+                <span class="number-style">01. </span>Исследование и упаковка
+              </h3>
+              <p class="service-description">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века.
+              </p>
+              <a class="learn-more" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="white-service-container"> </div>
+    </section>
+    <!-----------------------------SECTION 4 ----------------------------------->
     <section class="section4">
       <div class="wrapper">
         <h2>Наши проекты</h2>
@@ -154,7 +224,76 @@
         <button class="action-button">Все проекты</button>
       </div>
     </section>
-
-    <footer></footer>
+    <!-----------------------------SECTION 5 ----------------------------------->
+    <section class="section5" id="news">
+      <div class="colored-work-container">
+        <div class="content-work-container">
+          <h2 class="sections-header">Видео о нашей работе</h2>
+          <p class="work-description">Просто посмотрите, как мы работаем</p>
+          <video
+            src="./assets/corporate_video.mp4"
+            poster="./images/video_preview.jpg"
+            controls
+          >
+            Sorry, your browser doesn't support embedded videos, but don't
+            worry, you can
+            <a href="./assets/corporate_video.mp4">download it</a>
+            and watch it with your favorite video player!
+          </video>
+        </div>
+      </div>
+      <div class="white-work-container"></div>
+    </section>
+    <!-----------------------------SECTION 6 ----------------------------------->
+    <section class="section6">
+      <div class="subscribe-container">
+        <h3>Подпишитесь на нашу рассылку</h3>
+        <p>Полезные статьи, акции, новости - получите все это сейчас!</p>
+        <input type="text" placeholder="Ваш e-mail"/>
+        <input type="submit" />
+        <p>Мы не шлем спам, и передаем никому ваши данные.</p>
+      </div>
+    </section>
+    <!-----------------------------FOOTER ----------------------------------->
+    <footer>
+      <div class="footer-contacts-container">
+        <div class="contacts-box">
+          <h3>Контактная информация</h3>
+          <ul class="footer-ul">
+            <li class="footer-li email-li">test@test.ru</li>
+            <li class="footer-li phone-li">+8 777 555 66 99</li>
+            <li class="footer-li place-li">Москва, Бульвар Ленина 33</li>
+          </ul>
+        </div>
+        <div class="contacts-box">
+          <h3>Основные ссылки</h3>
+          <ul class="footer-ul">
+            <li class="footer-li">Главная</li>
+            <li class="footer-li">Наши проекты</li>
+            <li class="footer-li">Наши услуги</li>
+            <li class="footer-li">Контакты</li>
+          </ul>
+        </div>
+        <div class="contacts-box">
+          <h3>Наши проекты</h3>
+          <ul class="footer-ul">
+            <li class="footer-li">РосНано</li>
+            <li class="footer-li">Сколково</li>
+            <li class="footer-li">Проект “Восток”</li>
+            <li class="footer-li">ТЭЦ Калининграда</li>
+          </ul>
+        </div>
+        <div class="contacts-box">
+          <h3>Социальные сети</h3>
+          <ul class="footer-ul">
+            <li class="footer-li">VK.com</li>
+            <li class="footer-li">Instagram</li>
+            <li class="footer-li">Facebook</li>
+            <li class="footer-li">Twitter</li>
+          </ul>
+        </div>
+      </div>
+      <p>(с) 2019. Все права защищены.</ы>
+    </footer>
   </body>
 </html>
